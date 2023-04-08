@@ -45,6 +45,7 @@ def test(input_df:pd.DataFrame) -> None:
       
       # Run the tests
       unittest.TextTestRunner(verbosity=2).run(suite)
+      
       return None
 
 
@@ -60,7 +61,5 @@ if __name__ == '__main__':
     # Create the DataFrame outside the class
     df = pd.DataFrame({'A': [1, 2, 3], 'B': [4, 5, 6], 'C': [7, 8, 9]})
     
-    # Standard Test
+    # Test the dataframe
     test(df)
-    
-    df.to_csv("sample_test.csv")
