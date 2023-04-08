@@ -28,4 +28,4 @@ jobs:
         pip install unittest
 
     - name: Run tests
-      run: python your_script_name.py
+      run: python test.py
