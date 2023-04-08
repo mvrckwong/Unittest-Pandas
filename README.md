@@ -1,5 +1,5 @@
 # Unittest-Pandas
-Writing unittest in Pandas. Write unittest in the following:
+Writing unittest in Pandas. Test the following:
 
 - DataFrame Shape
 - DataFrame Column Names
