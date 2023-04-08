@@ -62,3 +62,5 @@ if __name__ == '__main__':
     
     # Standard Test
     test(df)
+    
+    df.to_csv("sample_test.csv")
