@@ -17,10 +17,10 @@ import unittest
 #                                                       #
 #########################################################
 
-class TestPandas(unittest.TestCase):
+class TestDataFrame(unittest.TestCase):
     
     def __init__(self, df, *args, **kwargs):
-        super(TestPandas, self).__init__(*args, **kwargs)
+        super(TestDataFrame, self).__init__(*args, **kwargs)
         self.df = df
     
     def test_dataframe_shape(self):
@@ -39,9 +39,9 @@ def test(input_df:pd.DataFrame) -> None:
       suite = unittest.TestSuite()
       
       # Add each instance of the TestPandas class with the DataFrame as an argument to the TestSuite
-      suite.addTest(TestPandas(input_df, 'test_dataframe_shape'))
-      suite.addTest(TestPandas(input_df, 'test_dataframe_colnames'))
-      suite.addTest(TestPandas(input_df, 'test_dataframe_values'))
+      suite.addTest(TestDataFrame(input_df, 'test_dataframe_shape'))
+      suite.addTest(TestDataFrame(input_df, 'test_dataframe_colnames'))
+      suite.addTest(TestDataFrame(input_df, 'test_dataframe_values'))
       
       # Run the tests
       unittest.TextTestRunner(verbosity=2).run(suite)
